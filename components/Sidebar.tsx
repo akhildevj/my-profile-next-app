@@ -1,4 +1,4 @@
-import { GiTie } from 'react-icons/gi';
+import { GiMoon, GiSun, GiTie } from 'react-icons/gi';
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -43,8 +43,8 @@ const Sidebar = () => {
 
       <a
         className='flex items-center justify-center px-1 py-2 my-3 bg-gray-200 rounded-full dark:bg-zinc-800 '
-        href='#'
-        download='name'
+        href='/resume.pdf'
+        download='resume.pdf'
       >
         <GiTie className='w-6 h-6' /> Download Resume
       </a>
@@ -94,12 +94,14 @@ const Sidebar = () => {
       <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-pink-500 to-rose-500 focus:outline-none'>
         Email Me
       </button>
-      <button
-        onClick={changeTheme}
-        className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-pink-500 to-rose-500'
-      >
-        Toggle Me
-      </button>
+      <div>
+        <button
+          onClick={changeTheme}
+          className='p-3 my-2 text-white rounded-full bg-gradient-to-r from-pink-500 to-rose-500'
+        >
+          {theme === 'light' ? <GiMoon /> : <GiSun />}
+        </button>
+      </div>
     </div>
   );
 };

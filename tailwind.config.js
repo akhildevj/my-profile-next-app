@@ -3,7 +3,8 @@ module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx'],
   theme: {
     fontFamily: {
-      Kaushan: ['Kaushan Script']
+      Kaushan: ['Kaushan Script'],
+      Quicksand: ['Quicksand']
     },
     boxShadow: {
       custom_light: '0 0 10px #313131',

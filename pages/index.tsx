@@ -31,10 +31,10 @@ const Home = () => {
           initial='initial'
           animate='animate'
         >
-          {services.map(service => (
+          {services.map((service, index) => (
             <motion.div
               variants={fadeInUp}
-              key={service.id}
+              key={index}
               className='bg-gray-200 rounded-lg dark:bg-black lg:col-span-1'
             >
               <ServiceCard service={service} />

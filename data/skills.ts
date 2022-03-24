@@ -1,39 +1,38 @@
+import { FaAws, FaNodeJs, FaReact } from 'react-icons/fa';
 import {
-  RiNodeTree,
-  RiAmazonLine,
-  RiDatabaseLine,
-  RiReactjsLine,
-  RiFlutterLine
-} from 'react-icons/ri';
-import { Service } from './interfaces/service';
+  SiDocker,
+  SiElasticsearch,
+  SiExpress,
+  SiFirebase,
+  SiFlutter,
+  SiJavascript,
+  SiKubernetes,
+  SiMongodb,
+  SiNestjs,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPython,
+  SiTailwindcss
+} from 'react-icons/si';
 import { Skill } from './interfaces/skill';
 
 export const languages: Skill[] = [
-  {
-    id: 1,
-    name: 'Flutter',
-    Icon: RiFlutterLine
-  },
-  {
-    id: 2,
-    name: 'Express.js',
-    Icon: RiNodeTree
-  },
-  {
-    id: 3,
-    name: 'React.js',
-    Icon: RiReactjsLine
-  }
+  { name: 'Node.js', Icon: FaNodeJs },
+  { name: 'Express.js', Icon: SiExpress },
+  { name: 'React.js', Icon: FaReact },
+  { name: 'Nest.js', Icon: SiNestjs },
+  { name: 'Next.js', Icon: SiNextdotjs },
+  { name: 'Flutter', Icon: SiFlutter },
+  { name: 'JavaScript', Icon: SiJavascript },
+  { name: 'Python', Icon: SiPython }
 ];
 export const tools: Skill[] = [
-  {
-    id: 1,
-    name: 'SQL',
-    Icon: RiDatabaseLine
-  },
-  {
-    id: 2,
-    name: 'AWS',
-    Icon: RiAmazonLine
-  }
+  { name: 'AWS', Icon: FaAws },
+  { name: 'MongoDB', Icon: SiMongodb },
+  { name: 'Firebase', Icon: SiFirebase },
+  { name: 'PostgreSQL', Icon: SiPostgresql },
+  { name: 'ElasticSearch', Icon: SiElasticsearch },
+  { name: 'Kubernetes', Icon: SiKubernetes },
+  { name: 'Docker', Icon: SiDocker },
+  { name: 'Tailwind', Icon: SiTailwindcss }
 ];

@@ -6,7 +6,7 @@ const SkillCard: FunctionComponent<{ skill: Skill }> = ({
 }) => {
   return (
     <div className='flex items-center px-4 py-1 my-2 rounded-full bg-gradient-to-r from-pink-500 to-rose-500'>
-      <Icon className='w-12 h-12 mr-3 text-white' />
+      <Icon className='w-8 h-8 mr-3 text-white' />
       <div>
         <h6 className='font-bold text-white'>{name}</h6>
       </div>

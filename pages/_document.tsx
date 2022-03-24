@@ -13,14 +13,15 @@ export default function Document() {
         <meta name='author' content='Akhildev MJ' />
 
         <link rel='apple-touch-icon' href='/favicon.ico'></link>
+
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
-          href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand:wght@300;400;500;600;700&display=swap'
           rel='stylesheet'
         />
       </Head>
-      <body className='bg-fixed bg-gradient-to-r from-pink-500 to-rose-700 dark:from-zinc-900 dark:to-zinc-800'>
+      <body className='bg-fixed bg-gradient-to-r from-pink-500 to-rose-700 dark:from-zinc-900 dark:to-zinc-800 font-Quicksand'>
         <Main />
         <NextScript />
       </body>

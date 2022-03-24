@@ -9,38 +9,39 @@ import { Service } from './interfaces/service';
 
 export const services: Service[] = [
   {
-    id: 1,
-    title: 'Flutter Developer',
+    title: 'Backend Developer',
     about:
-      'Hi there, I am a Software Engineer with 5+ Years of <b>development</b> experience in several languages.',
+      'I have experience working with several backend frameworks like <b>Express.js</b> and <b>Nest.js</b>.',
     Icon: RiFlutterLine
   },
   {
-    id: 2,
-    title: 'Backend Developer',
-    about:
-      'Hi there, I am a Software Engineer with 5+ Years of <b>development</b> experience in several languages.',
-    Icon: RiNodeTree
-  },
-  {
-    id: 3,
     title: 'Frontend Developer',
     about:
-      'Hi there, I am a Software Engineer with 5+ Years of <b>development</b> experience in several languages.',
+      'I have experience working with several frontend frameworks like <b>React.js</b> and <b>Next.js</b>.',
     Icon: RiReactjsLine
   },
   {
-    id: 4,
     title: 'Database Management',
     about:
-      'Hi there, I am a Software Engineer with 5+ Years of <b>development</b> experience in several languages.',
+      'I have experience working with both SQL and NoSQL databases. Also several databases like <b>MySQL</b>, <b>MS SQL</b>, <b>PostgreSQL</b>, <b>MongoDB</b>, <b>Elasticsearch</b>, and <b>Firebase</b>.',
     Icon: RiDatabaseLine
   },
   {
-    id: 5,
     title: 'Amazon Cloud',
     about:
-      'Hi there, I am a Software Engineer with 5+ Years of <b>development</b> experience in several languages.',
+      'I have experience working with several AWS services like <b>Amazon EC2</b>, <b>Amazon Lambda</b>, <b>Amazon S3</b>, <b>Amazon CloudFront</b>, <b>Dynamo DB</b>, and <b>Amazon Cloudwatch</b>.',
     Icon: RiAmazonLine
+  },
+  {
+    title: 'Flutter Developer',
+    about:
+      'I have experience working with <b>Flutter</b> and <b>Dart</b> programming language.',
+    Icon: RiNodeTree
+  },
+  {
+    title: 'Frontend Styling',
+    about:
+      'I have experience working with <b>CSS</b>, <b>CSS Modules</b>, <b>Sass</b>, and <b>Tailwind CSS</b>.',
+    Icon: RiReactjsLine
   }
 ];

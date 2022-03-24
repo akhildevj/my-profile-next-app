@@ -42,15 +42,15 @@ const resume = () => {
 
       <div className='grid mt-10 gap-9 md:grid-cols-2'>
         <div>
-          <h5 className='my-3 text-2xl font-bold'>Languages & Frameworks</h5>
+          <h5 className='my-3 text-2xl font-bold'>Frameworks</h5>
           <motion.div
             variants={stagger}
             initial='initial'
             animate='animate'
-            className='my-2'
+            className='grid my-2 lg:grid-cols-2 md:grid-cols-1 gap-x-3'
           >
             {languages.map(language => (
-              <motion.div variants={fadeInUp} key={language.id}>
+              <motion.div variants={fadeInUp} key={language.name}>
                 <SkillCard skill={language} />
               </motion.div>
             ))}
@@ -63,10 +63,10 @@ const resume = () => {
             variants={stagger}
             initial='initial'
             animate='animate'
-            className='my-2'
+            className='grid my-2 lg:grid-cols-2 md:grid-cols-1 gap-x-3'
           >
             {tools.map(tool => (
-              <motion.div variants={fadeInUp} key={tool.id}>
+              <motion.div variants={fadeInUp} key={tool.name}>
                 <SkillCard skill={tool} />
               </motion.div>
             ))}
