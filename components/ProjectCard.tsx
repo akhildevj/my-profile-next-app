@@ -33,6 +33,7 @@ const ProjectCard: FunctionComponent<{
         layout='responsive'
         className='cursor-pointer'
         onClick={() => setShowDetails(id)}
+        priority={true}
       />
       <p className='my-2 text-center'> {name}</p>
 

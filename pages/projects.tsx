@@ -4,10 +4,11 @@ import { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import ProjectsNavBar from '../components/ProjectsNavbar';
 import { Category } from '../data/interfaces/project';
-import { projects as data } from '../data/projects';
 import { fadeInUp, routeAnimation, stagger } from '../helpers/animation';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
-const Projects = () => {
+const Projects = ({ projects: data }) => {
   const [projects, setProjects] = useState(data);
   const [active, setActive] = useState('all');
   const [showDetails, setShowDetails] = useState<number | null>(null);
@@ -45,10 +46,10 @@ const Projects = () => {
         animate='animate'
         className='relative grid grid-cols-12 gap-4 my-3'
       >
-        {projects.map(project => (
+        {projects.map((project, index) => (
           <motion.div
             variants={fadeInUp}
-            key={project.id}
+            key={index}
             className='col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-zinc-800'
           >
             <ProjectCard
@@ -61,6 +62,20 @@ const Projects = () => {
       </motion.div>
     </motion.div>
   );
+};
+
+export const getStaticProps = async () => {
+  const firebaseConfig = {
+    apiKey: process.env.API_KEY,
+    projectId: process.env.PROJECT_ID
+  };
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const projectCollection = collection(db, 'projects');
+  const projectSnapshot = await getDocs(projectCollection);
+  const projects = projectSnapshot.docs.map(doc => doc.data());
+
+  return { props: { projects }, revalidate: 60 };
 };
 
 export default Projects;
