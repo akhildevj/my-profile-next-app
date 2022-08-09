@@ -12,7 +12,7 @@ const NavItem: FunctionComponent<{
       <Link href={route} passHref={true}>
         <span
           onClick={() => setActive(name)}
-          className='cursor-pointer hover:text-rose-500'
+          className='cursor-pointer hover:text-cyan-400'
         >
           {name}
         </span>

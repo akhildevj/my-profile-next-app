@@ -59,6 +59,8 @@ const ProjectCard: FunctionComponent<{
             >
               <a
                 href={githubUrl}
+                target='_blank'
+                rel='noopener noreferrer'
                 className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-400 dark:bg-zinc-800'
               >
                 <AiFillGithub />
@@ -66,6 +68,8 @@ const ProjectCard: FunctionComponent<{
               </a>
               <a
                 href={projectUrl}
+                target='_blank'
+                rel='noopener noreferrer'
                 className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-400 dark:bg-zinc-800'
               >
                 <AiFillProject />

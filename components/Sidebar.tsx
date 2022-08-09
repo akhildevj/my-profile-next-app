@@ -49,7 +49,7 @@ const Sidebar = () => {
         <GiTie className='w-6 h-6' /> Download Resume
       </a>
 
-      <div className='flex justify-around w-9/12 mx-auto my-5 text-rose-500 md:w-full'>
+      <div className='flex justify-around w-9/12 mx-auto my-5 text-cyan-400 md:w-full'>
         <a
           href='https://www.github.com/akhildevj'
           rel='noreferrer'
@@ -91,13 +91,13 @@ const Sidebar = () => {
         <p className='my-2 break-words'>+91 9074123050</p>
       </div>
 
-      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-pink-500 to-rose-500 focus:outline-none'>
+      <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-cyan-400 to-sky-600 focus:outline-none'>
         Email Me
       </button>
       <div>
         <button
           onClick={changeTheme}
-          className='p-3 my-2 text-white rounded-full bg-gradient-to-r from-pink-500 to-rose-500'
+          className='p-3 my-2 text-white rounded-full bg-gradient-to-r from-cyan-400 to-sky-600'
         >
           {theme === 'light' ? <GiMoon /> : <GiSun />}
         </button>

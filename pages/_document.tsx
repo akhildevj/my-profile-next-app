@@ -21,7 +21,7 @@ export default function Document() {
           rel='stylesheet'
         />
       </Head>
-      <body className='bg-fixed bg-gradient-to-r from-pink-500 to-rose-700 dark:from-zinc-900 dark:to-zinc-800 font-Quicksand'>
+      <body className='bg-fixed bg-gradient-to-r from-cyan-400 to-sky-600 dark:from-zinc-900 dark:to-zinc-800 font-Quicksand'>
         <Main />
         <NextScript />
       </body>

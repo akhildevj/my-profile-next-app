@@ -14,7 +14,7 @@ const NavBar = () => {
 
   return (
     <div className='flex justify-between px-5 py-3 my-3'>
-      <span className='text-xl font-bold border-b-4 text-rose-600 border-rose-400 md:text-2xl'>
+      <span className='text-xl font-bold border-b-4 text-cyan-400 border-sky-600 md:text-2xl'>
         {active}
       </span>
       <div className='flex space-x-5 text-lg'>
